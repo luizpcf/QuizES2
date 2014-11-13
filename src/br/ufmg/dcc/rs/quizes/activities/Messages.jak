@@ -1,0 +1,9 @@
+layer br.ufmg.dcc.rs.quizes.activities;
+
+SoUrCe RooT Base.br.ufmg.dcc.rs.quizes.activities "../../../../../../../features/Base/br/ufmg/dcc/rs/quizes/activities/Messages.jak";
+public class Messages {
+
+	public static final String ERROR_DB_SELECT = "Erro na obt????o de valores no banco.";
+	public static final String ERROR_DB_CREATE_TABLES = "Erro na cria????o de tabelas.";
+	
+}

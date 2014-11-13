@@ -1,0 +1,7 @@
+
+public class Messages {
+
+	public static final String ERROR_DB_SELECT = "Erro na obtção de valores no banco.";
+	public static final String ERROR_DB_CREATE_TABLES = "Erro na criação de tabelas.";
+	
+}

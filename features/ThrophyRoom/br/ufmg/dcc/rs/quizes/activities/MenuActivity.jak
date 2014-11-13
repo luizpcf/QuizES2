@@ -1,0 +1,15 @@
+
+import android.widget.Button;
+
+/**
+ * TODO description
+ */
+public refines class MenuActivity {
+
+	protected void onCreate(Bundle savedInstanceState) {
+		Super().onCreate(savedInstanceState);
+		Button button = (Button) findViewById(R.id.menu_trofeus);
+		button.setVisibility(8);
+	}
+	
+}

@@ -1,0 +1,30 @@
+layer br.ufmg.dcc.rs.quizes.model;
+
+SoUrCe RooT Base.br.ufmg.dcc.rs.quizes.model "../../../../../../../features/Base/br/ufmg/dcc/rs/quizes/model/Lesson.jak";
+
+public class Lesson {
+	
+	private String type;
+	private String text;
+	
+	public Lesson(String type, String text) {
+		this.type = type;
+		this.text = text;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	public String getText() {
+		return text;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+}

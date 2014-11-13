@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="QuizES">
+				<and abstract="true" mandatory="true" name="Mode">
+					<feature mandatory="true" name="Admin"/>
+					<feature mandatory="true" name="Player"/>
+				</and>
+				<feature name="Ranking"/>
+				<feature mandatory="true" name="Rules"/>
+				<or abstract="true" name="Tools">
+					<feature mandatory="true" name="ManagementQuestions"/>
+					<feature mandatory="true" name="ManagementPlayers"/>
+					<and abstract="true" mandatory="true" name="Settings">
+						<feature name="Points"/>
+						<and name="Money">
+							<feature name="MoneyQuestions"/>
+							<feature name="MoneyTeam"/>
+						</and>
+						<feature name="Goals"/>
+					</and>
+				</or>
+				<feature name="ThrophyRoom"/>
+				<feature name="Authentication"/>
+				<or abstract="true" name="Team">
+					<feature mandatory="true" name="Novice"/>
+					<feature mandatory="true" name="Intermidiate"/>
+					<feature mandatory="true" name="Expert"/>
+				</or>
+				<feature mandatory="true" name="Base"/>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="true">
+			<feature name="Base"/>
+			<feature name="Admin"/>
+			<feature name="Player"/>
+			<feature name="Expert"/>
+			<feature name="Novice"/>
+			<feature name="Goals"/>
+			<feature name="Money"/>
+			<feature name="MoneyQuestions"/>
+			<feature name="ManagementPlayers"/>
+			<feature name="ManagementQuestions"/>
+			<feature name="Ranking"/>
+			<feature name="Points"/>
+			<feature name="Rules"/>
+			<feature name="Authentication"/>
+			<feature name="ThrophyRoom"/>
+			<feature name="Intermidiate"/>
+			<feature name="MoneyTeam"/>
+		</featureOrder>
+	</featureModel>
