@@ -26,11 +26,11 @@ abstract class MenuActivity$$Base$br$ufmg$dcc$rs$quizes$activities extends Activ
 	}
 	
 	public void acessarTorneios(View view) {
-		//startActivity(new Intent(this, TorneiosActivity.class));
+		startActivity(new Intent(this, TournamentActivity.class));
 	}
 	
 	public void acessarTrofeus(View view) {
-		//startActivity(new Intent(this, TrofeusActivity.class));
+		startActivity(new Intent(this, TrophyActivity.class));
 	}
 
 	

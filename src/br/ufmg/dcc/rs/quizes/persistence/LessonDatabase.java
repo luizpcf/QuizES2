@@ -8,12 +8,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import br.ufmg.dcc.rs.quizes.model.Question;
+import br.ufmg.dcc.rs.quizes.model.Lesson;
 
 
 
 public class LessonDatabase {
 
+	public static List lessons;
 	public static LessonDatabase instance;
 	
 	public static LessonDatabase getInstance() {
@@ -23,30 +24,18 @@ public class LessonDatabase {
 		return instance;
 	}
 	
-	public static void setInstance(LessonDatabase questionDatabase)
-	{
-		instance=questionDatabase;
-	}
-
-	//private Map<String, List<Question>> questionsByCategory;
-	
-	public void getQuestionsByCategory() {
-		
+	private LessonDatabase(){
+		lessons = new ArrayList();
+		lessons.add(new Lesson("Intro","\nReutilização\nA reutilização de software se baseia no uso de conceitos, produtos ou soluções previamente elaboradas ou adquiridas para criação de um novo software, visando melhorar significativamente a qualidade e a produtividade. Reusar um produto significa poder reusar partes de um sistema desenvolvido anteriormente como: especificações, módulos de um projeto, arquitetura e código fonte. É a reaplicação de informações e artefatos de um sistema já definido, em outros sistemas semelhantes. O termo reuso pode ser considerado uma denominação genérica para uma série de técnicas utilizadas, que vão desde a etapa de modelagem de um projeto até a implementação.\nA principal motivação para a reutilização está relacionada ao aumento dos níveis de qualidade e produtividade no desenvolvimento de software. O aumento de qualidade é uma conseqüência da reutilização de componentes que foram previamente documentados, testados e aprovados. O aumento da produtividade é resultado de uma redução no tempo de desenvolvimento, evitando a reconstrução de partes do sistema que já existem.\n  A reutilização pode ser introduzida em diferentes fases e níveis do desenvolvimento de software: requisitos, design, código. É mais comum a reutilização de porções de código, design e testes, do que a reutilização de requisitos. A reutilização em fases com maior nível de abstração aumenta os benefícios da mesma e facilita a reutilização em fases mais avançadas do ciclo de vida do produto. Embora já se tenha chegado a essa conclusão, a reutilização de requisitos tem merecido pouca atenção dos investigadores. É necessário mobilizar o estabelecimento de um processo gradativo e coordenado de reutilização, não só no código, mas em todo o processo de desenvolvimento de software.\nAtualmente existem várias técnicas de reuso como frameworks, arquiteturas orientadas a serviços (SOA), engenharia de software baseada em componentes, entre outras."));
+		lessons.add(new Lesson("Padroes","\nEm engenharia de software, um padrão de projeto ou padrão de desenho (do inglês design pattern) é uma solução geral reutilizável para um problema que ocorre com frequência dentro de um determinado contexto no projeto de software. Um padrão de projeto não é um projeto finalizado que pode ser diretamente transformado em código fonte ou de máquina, ele é uma descrição ou modelo (template) de como resolver um problema que pode ser usado em muitas situações diferentes. Padrões são melhores práticas formalizadas que o programador pode usar para resolver problemas comuns quando projetar uma aplicação ou sistema. Padrões de projeto orientados a objeto normalmente mostram relacionamentos e interações entre classes ou objetos, sem especificar as classes ou objetos da aplicação final que estão envolvidas. Padrões que implicam orientação a objetos ou estado mutável mais geral, não são tão aplicáveis em linguagens de programação funcional.\nPadrões de projeto residem no domínio de módulos e interconexões. Em um nível mais alto há padrões arquiteturais que são maiores em escopo, usualmente descrevendo um padrão global seguido por um sistema inteiro.1\nUm padrão de projeto define :\n    seu nome,\n    o problema,\n    quando aplicar esta solução e\n    suas consequências.\nOs padrões de projeto :\n    visam facilitar a reutilização de soluções de desenho - isto é, soluções na fase de projeto do software - e\n    estabelecem um vocabulário comum de desenho, facilitando comunicação, documentação e aprendizado dos sistemas de software."));
 	}
 	
-	public List getAllQuestions() {
-		List questions = new ArrayList();
-		
-		return questions;
+	public Lesson getLessonByCategory(String category) {
+		for (int i = 0; i < lessons.size(); i++) {
+			Lesson lesson = (Lesson) lessons.get(i);
+			if(lesson.getType() == category)
+				return lesson;
+		}
+		return null;
 	}
-	
-
-	public List getCategories(){
-		 List categories =  new LinkedList();
-		 //categories.addAll(questionsByCategory.keySet());
-		 Collections.sort(categories);
-		 return categories;
-	}
-
-	
 }

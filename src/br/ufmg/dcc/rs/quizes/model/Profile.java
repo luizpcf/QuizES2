@@ -2,20 +2,17 @@ package br.ufmg.dcc.rs.quizes.model;
 
 
 
-public class Profile {
-	private Integer id;
-	private int points;
-	private int money;
-	private String name;
+abstract class Profile$$Base$br$ufmg$dcc$rs$quizes$model {
+	protected Integer id;
+	protected String name;
 	
-	public Profile(int points, int money) {
-		this.points = points;
-		this.money = money;
+	public Profile$$Base$br$ufmg$dcc$rs$quizes$model(){
+		clean();
 	}
 	
-	public Profile() {
-		this.points = 0;
-		this.money = 0;
+	protected void clean(){
+		id=0;
+		name = "";
 	}
 	
 	public Integer getId() {
@@ -26,12 +23,25 @@ public class Profile {
 		((Profile) this).id = id;
 	}
 	
-	public int getPoints() {
-		return points;
+	public String getName() {
+		return name;
 	}
 	
-	public void setPoints(int points) {
-		((Profile) this).points = points;
+	public void setName(String name) {
+		((Profile) this).name = name;
+	}
+}
+
+/**
+ * TODO description
+ */
+abstract class Profile$$Money$br$ufmg$dcc$rs$quizes$model extends  Profile$$Base$br$ufmg$dcc$rs$quizes$model  {
+
+	protected int money;
+	
+	protected void clean() {
+		super.clean();
+		money = 0;
 	}
 	
 	public int getMoney() {
@@ -41,12 +51,37 @@ public class Profile {
 	public void setMoney(int money) {
 		((Profile) this).money = money;
 	}
+      // inherited constructors
+
+
 	
-	public String getName() {
-		return name;
+	public Profile$$Money$br$ufmg$dcc$rs$quizes$model (  ) { super(); }
+	
+}
+
+/**
+ * TODO description
+ */
+public class Profile extends  Profile$$Money$br$ufmg$dcc$rs$quizes$model  {
+
+	protected int points;
+	
+	protected void clean() {
+		super.clean();
+		points = 0;
 	}
 	
-	public void setName(String name) {
-		((Profile) this).name = name;
+	public int getPoints() {
+		return points;
 	}
+	
+	public void setPoints(int points) {
+		((Profile) this).points = points;
+	}
+      // inherited constructors
+
+
+	
+	public Profile (  ) { super(); }
+
 }

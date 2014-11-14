@@ -2,20 +2,17 @@ layer br.ufmg.dcc.rs.quizes.model;
 
 SoUrCe RooT Base.br.ufmg.dcc.rs.quizes.model "../../../../../../../features/Base/br/ufmg/dcc/rs/quizes/model/Profile.jak";
 
-public class Profile {
-	private Integer id;
-	private int points;
-	private int money;
-	private String name;
+abstract class Profile$$Base$br$ufmg$dcc$rs$quizes$model {
+	protected Integer id;
+	protected String name;
 	
-	public Profile(int points, int money) {
-		this.points = points;
-		this.money = money;
+	public Profile$$Base$br$ufmg$dcc$rs$quizes$model(){
+		clean();
 	}
 	
-	public Profile() {
-		this.points = 0;
-		this.money = 0;
+	protected void clean(){
+		id=0;
+		name = "";
 	}
 	
 	public Integer getId() {
@@ -26,12 +23,25 @@ public class Profile {
 		this.id = id;
 	}
 	
-	public int getPoints() {
-		return points;
+	public String getName() {
+		return name;
 	}
 	
-	public void setPoints(int points) {
-		this.points = points;
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+SoUrCe  Money.br.ufmg.dcc.rs.quizes.model "../../../../../../../features/Money/br/ufmg/dcc/rs/quizes/model/Profile.jak";/**
+ * TODO description
+ */
+abstract class Profile$$Money$br$ufmg$dcc$rs$quizes$model extends  Profile$$Base$br$ufmg$dcc$rs$quizes$model  {
+
+	protected int money;
+	
+	protected void clean() {
+		Super().clean();
+		money = 0;
 	}
 	
 	public int getMoney() {
@@ -42,11 +52,26 @@ public class Profile {
 		this.money = money;
 	}
 	
-	public String getName() {
-		return name;
+}
+
+SoUrCe  Points.br.ufmg.dcc.rs.quizes.model "../../../../../../../features/Points/br/ufmg/dcc/rs/quizes/model/Profile.jak";/**
+ * TODO description
+ */
+public class Profile extends  Profile$$Money$br$ufmg$dcc$rs$quizes$model  {
+
+	protected int points;
+	
+	protected void clean() {
+		Super().clean();
+		points = 0;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	public int getPoints() {
+		return points;
 	}
+	
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
 }

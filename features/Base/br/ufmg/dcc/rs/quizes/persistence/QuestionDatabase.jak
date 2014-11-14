@@ -94,50 +94,50 @@ public class QuestionDatabase {
 		
 		//Quiz 1
 		//true false
-		questions.add(new Question("Software �� um programa de computador e a documenta����o associada.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Software é um programa de computador e a documentação associada.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Engenharia de Software se preocupa com todos os aspectos do desenvolvimento de sistemas computacionais, incluindo hardware e processo.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Software se preocupa com todos os aspectos do desenvolvimento de sistemas computacionais, incluindo hardware e processo.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Engenharia de Software �� uma disciplina de engenharia que se preocupa com todos os aspectos de produ����o de software.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Software é uma disciplina de engenharia que se preocupa com todos os aspectos de produção de software.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A diferen��a entre Ci��ncia da Computa����o e Engenharia de Software �� que a primeira foca em teoria e fundamentos enquanto a segunda preocupa-se com o lado pr��tico do desenvolvimento e entrega de software.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A diferença entre Ciência da Computação e Engenharia de Software é que a primeira foca em teoria e fundamentos enquanto a segunda preocupa-se com o lado prático do desenvolvimento e entrega de software.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A diferen��a entre Engenharia de Software e Engenharia de Sistemas �� que a primeira se preocupa com todos os aspectos de sistemas computacionais. Assim, Engenharia de Sistemas �� parte da Engenharia de Software.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("A diferença entre Engenharia de Software e Engenharia de Sistemas é que a primeira se preocupa com todos os aspectos de sistemas computacionais. Assim, Engenharia de Sistemas é parte da Engenharia de Software.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("As principais atividades da Engenharia de Software s��o especifica����o, modelagem, testes e evolu����o.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("As principais atividades da Engenharia de Software são especificação, modelagem, testes e evolução.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Pressman apresenta uma vis��o da Engenharia de Software em cinco camadas sobrepostas: qualidade, processos de software, m��todos de software, ferramentas e pessoas.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("Pressman apresenta uma visão da Engenharia de Software em cinco camadas sobrepostas: qualidade, processos de software, métodos de software, ferramentas e pessoas.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("As principais fases da Especifica����o de Requisitos s��o estudo de viabilidade, elicita����o ou an��lise de requisitos, especifica����o de requisitos e valida����o dos requisitos.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("As principais fases da Especificação de Requisitos são estudo de viabilidade, elicitação ou análise de requisitos, especificação de requisitos e validação dos requisitos.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A lei da Complexidade Crescente de Lehman diz que a medida que um sistema evolui, sua complexidade aumenta, a menos que seja realizado esfor��o para mant��-la ou diminu��-la.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A lei da Complexidade Crescente de Lehman diz que a medida que um sistema evolui, sua complexidade aumenta, a menos que seja realizado esforço para mantá-la ou diminuí-la.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Uma das leis de evolu����o diz que a qualidade de sistemas parecer�� estar declinando a menos que eles sejam mantidos e adaptados ��s modifica����es do ambiente.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Uma das leis de evolução diz que a qualidade de sistemas parecerá estar declinando a menos que eles sejam mantidos e adaptados às modificações do ambiente.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		
 		//Quiz 2
 		//true false
-		questions.add(new Question("Na fase de An��lise de Requisitos s��o usadas v��rias t��cnicas baseadas em observa����o e entrevistas.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Na fase de Análise de Requisitos são usadas várias técnicas baseadas em observação e entrevistas.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("O objetivo do Teste de Componentes �� garantir que dois ou mais componentes funcionam juntos.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("O objetivo do Teste de Componentes é garantir que dois ou mais componentes funcionam juntos.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A principal vantagem da Prototipa����o �� que ela auxilia o engenheiro de software e o cliente a entenderem melhor o que deve ser constru��do.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A principal vantagem da Prototipação é que ela auxilia o engenheiro de software e o cliente a entenderem melhor o que deve ser construído.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("No Modelo Espiral o software �� desenvolvido em vers��es.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("No Modelo Espiral o software é desenvolvido em versões.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		
 		//Quiz 3
 		//true false
-		questions.add(new Question("Em m��todos ��geis, o cliente geralmente paga pelo tempo necess��rio para o desenvolvimento do sistema, e n��o pelo desenvolvimento de um determinado conjunto de requisitos.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Em métodos ágeis, o cliente geralmente paga pelo tempo necessário para o desenvolvimento do sistema, e não pelo desenvolvimento de um determinado conjunto de requisitos.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Em Programa����o Extrema (XP), os programadores trabalham em pares e desenvolvem testes antes de escreverem o c��digo.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Em Programação Extrema (XP), os programadores trabalham em pares e desenvolvem testes antes de escreverem o código.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("O Scrum recomenda o uso de pr��ticas de programa����o ��gil, como programa����o por pares e desenvolvimento dirigido por testes.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("O Scrum recomenda o uso de práticas de programação ágil, como programação por pares e desenvolvimento dirigido por testes.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		
 		
 		//Quiz 4
 		//true false
-		questions.add(new Question("Engenharia de Requisitos �� o processo de descobrir, analisar, documentar e verificar os servi��os que o sistema deve oferecer e as restri����es ao seu funcionamento.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Requisitos é o processo de descobrir, analisar, documentar e verificar os serviços que o sistema deve oferecer e as restrições ao seu funcionamento.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Stakeholders s��o pessoas que t��m qualquer influ��ncia direta ou indireta sobre os requisitos, como os usu��rios finais.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Stakeholders são pessoas que têm qualquer influência direta ou indireta sobre os requisitos, como os usuários finais.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 						
 		
 		return questions;

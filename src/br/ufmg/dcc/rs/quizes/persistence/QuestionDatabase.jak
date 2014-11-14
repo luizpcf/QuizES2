@@ -60,86 +60,86 @@ public class QuestionDatabase {
 		
 		
 		//Quiz 2
-		questions.add(new Question("Qual ?? o documento tipicamente produzido na fase Elicita????o e An??lise de Requisitos?", "Documento de Requisitos", "Relat??rio de Viabilidade", "Modelos de Sistema", "Todos os anteriores", "Modelos de Sistema", "Categoria", "Tipo"));
-		questions.add(new Question("A fase de Valida????o de Requisitos avalia o documento de requisitos quanto a:", "Realismo", "Consist??nncia", "Completude", "Todos os anteriores", "Todos os anteriores", "Categoria", "Tipo"));
-		questions.add(new Question("Um processo de software sempre define, exceto:", "O que ?? feito", "Quando ?? feito", "Como ?? feito", "Quem faz", "Como ?? feito", "Categoria", "Tipo"));
-		questions.add(new Question("As seguintes op????es s??o vantagens de se ter um processo de software, exceto:", "Melhor documenta????o dos artefatos", "Maior padroniza????o dos artefatos", "Melhor comunica????o da equipe", "Menos treinamento de pessoal", "Melhor documenta????o dos artefatos", "Categoria", "Tipo"));
-		questions.add(new Question("As seguintes op????es s??o vantagens do Modelo Cascata, exceto:", "Ader??ncia a outros modelos de processo", "Permite trabalhar melhor o entendimento dos requisitos", "Reflete abordagens adotadas em outras engenharias", "Documenta????o r??gida em cada atividade", "Permite trabalhar melhor o entendimento dos requisitos", "Categoria", "Tipo"));
-		questions.add(new Question("Qual das seguintes atividades n??o aparece no modelo de processo Desenvolvimento Incremental?", "Especifica????o", "Projeto de arquitetura", "Desenvolvimento", "Valida????o", "Projeto de arquitetura", "Categoria", "Tipo"));
+		questions.add(new Question("Qual é o documento tipicamente produzido na fase Elicitação e Análise de Requisitos?", "Documento de Requisitos", "Relatório de Viabilidade", "Modelos de Sistema", "Todos os anteriores", "Modelos de Sistema", "Categoria", "Tipo"));
+		questions.add(new Question("A fase de Validação de Requisitos avalia o documento de requisitos quanto a:", "Realismo", "Consistênncia", "Completude", "Todos os anteriores", "Todos os anteriores", "Categoria", "Tipo"));
+		questions.add(new Question("Um processo de software sempre define, exceto:", "O que é feito", "Quando é feito", "Como é feito", "Quem faz", "Como é feito", "Categoria", "Tipo"));
+		questions.add(new Question("As seguintes opções são vantagens de se ter um processo de software, exceto:", "Melhor documentação dos artefatos", "Maior padronização dos artefatos", "Melhor comunicação da equipe", "Menos treinamento de pessoal", "Melhor documentação dos artefatos", "Categoria", "Tipo"));
+		questions.add(new Question("As seguintes opções são vantagens do Modelo Cascata, exceto:", "Aderência a outros modelos de processo", "Permite trabalhar melhor o entendimento dos requisitos", "Reflete abordagens adotadas em outras engenharias", "Documentação rígida em cada atividade", "Permite trabalhar melhor o entendimento dos requisitos", "Categoria", "Tipo"));
+		questions.add(new Question("Qual das seguintes atividades não aparece no modelo de processo Desenvolvimento Incremental?", "Especificação", "Projeto de arquitetura", "Desenvolvimento", "Validação", "Projeto de arquitetura", "Categoria", "Tipo"));
 		
 		//Quiz 3
-		//Essa quest??o cont??m tamb??m a resposta: Valorizamos software em funcionamento mais que documenta????o abrangente.
-		questions.add(new Question("Qual das seguintes afirma????es n??o faz parte do manifesto ??gil?", "Valorizamos indiv??duos e intera????es mais que processos e ferramentas.", "Valorizamos satisfa????o do cliente mais que funcionalidade implementada.", "Valorizamos colabora????o com o cliente mais que negocia????o de contratos.", "Valorizamos responder a mudan??as mais que seguir um plano.", "Valorizamos satisfa????o do cliente mais que funcionalidade implementada.", "Categoria", "Tipo"));
-		questions.add(new Question("Como s??o expressos os requisitos de software em Programa????o Extrema (XP)?", "Hist??rias do usu??rio", "Casos de uso", "Tarefas", "Product Backlog", "Hist??rias do usu??rio", "Categoria", "Tipo"));
-		//Essa quest??o cont??m tamb??m a resposta: Ritmo sustent??vel
-		questions.add(new Question("Qual das seguintes op????es n??o corresponde a uma pr??tica de Programa????o Extrema (XP)?", "Planejamento incremental", "Refatora????o", "Propriedade coletiva", "Programar para reusar", "Programar para reusar", "Categoria", "Tipo"));
-		questions.add(new Question("Qual das seguintes op????es n??o ?? uma fun????o central do Scrum Master?", "Organizar reuni??es di??rias", "Registrar decis??es", "Resolver impedimentos", "Definir as tarefas priorit??rias", "Definir as tarefas priorit??rias", "Categoria", "Tipo"));
-		questions.add(new Question("Qual das seguintes op????es n??o ?? um papel de porco segundo a nomenclatura do Scrum?", "Scrum Master", "Team", "Representante do Cliente", "Todos os anteriores s??o porcos", "Representante do Cliente", "Categoria", "Tipo"));
-		questions.add(new Question("Quanto tempo dura cada reuni??o di??ria no Scrum?", "15 minutos", "1 hora", "4 horas", "8 horas", "15 minutos", "Categoria", "Tipo"));
-		questions.add(new Question("Quanto tempo dura cada reuni??o de planejamento do sprint no Scrum?", "15 minutos", "1 hora", "4 horas", "8 horas", "8 horas", "Categoria", "Tipo"));
+		//Essa questão contém também a resposta: Valorizamos software em funcionamento mais que documentação abrangente.
+		questions.add(new Question("Qual das seguintes afirmações não faz parte do manifesto ágil?", "Valorizamos indivíduos e interações mais que processos e ferramentas.", "Valorizamos satisfação do cliente mais que funcionalidade implementada.", "Valorizamos colaboração com o cliente mais que negociação de contratos.", "Valorizamos responder a mudanças mais que seguir um plano.", "Valorizamos satisfação do cliente mais que funcionalidade implementada.", "Categoria", "Tipo"));
+		questions.add(new Question("Como são expressos os requisitos de software em Programação Extrema (XP)?", "Histórias do usuário", "Casos de uso", "Tarefas", "Product Backlog", "Histórias do usuário", "Categoria", "Tipo"));
+		//Essa questão contém também a resposta: Ritmo sustentável
+		questions.add(new Question("Qual das seguintes opções não corresponde a uma prática de Programação Extrema (XP)?", "Planejamento incremental", "Refatoração", "Propriedade coletiva", "Programar para reusar", "Programar para reusar", "Categoria", "Tipo"));
+		questions.add(new Question("Qual das seguintes opções não é uma função central do Scrum Master?", "Organizar reuniões diárias", "Registrar decisões", "Resolver impedimentos", "Definir as tarefas prioritárias", "Definir as tarefas prioritárias", "Categoria", "Tipo"));
+		questions.add(new Question("Qual das seguintes opções não é um papel de porco segundo a nomenclatura do Scrum?", "Scrum Master", "Team", "Representante do Cliente", "Todos os anteriores são porcos", "Representante do Cliente", "Categoria", "Tipo"));
+		questions.add(new Question("Quanto tempo dura cada reunião diária no Scrum?", "15 minutos", "1 hora", "4 horas", "8 horas", "15 minutos", "Categoria", "Tipo"));
+		questions.add(new Question("Quanto tempo dura cada reunião de planejamento do sprint no Scrum?", "15 minutos", "1 hora", "4 horas", "8 horas", "8 horas", "Categoria", "Tipo"));
 		
 		//Quiz 4
-		questions.add(new Question("Qual das op????es abaixo n??o ?? uma caracter??stica de requisitos de usu??rio?", "Descreve as fun????es e restri????es do sistema de forma abstrata", "Devem ser padronizados, completos e consistentes", "Escrito em linguagem natural com diagramas simples", "Ponto de vista das necessidades da empresa cliente", "Devem ser padronizados, completos e consistentes", "Categoria", "Tipo"));
-		//Essa quest??o cont??m tamb??m as respostas: Use linguagem consistente para distinguir entre os requisitos obrigat??rios e os desej??veis.
-		//										   Invente um formato padr??o e garanta que todas as defini????es de requisitos aderem a esse formato.
-		questions.add(new Question("Qual das op????es abaixo n??o ?? uma diretriz recomendada por Sommerville para minimizar os mal entendidos na reda????o de requisitos em linguagem natural?", "Use uma forma de destacar as partes fundamentais do requisito.", "N??o assuma que os leitores compreendem a linguagem t??cnica de engenharia de software.", "Sempre que poss??vel, tente associar uma l??gica a cada um dos requisitos de usu??rio.", "Todas as op????es acima s??o diretrizes para reda????o de requisitos em linguagem natural.", "Todas as op????es acima s??o diretrizes para reda????o de requisitos em linguagem natural.", "Categoria", "Tipo"));
-		questions.add(new Question("Qual das op????es abaixo n??o faz parte da defini????o de requisitos funcionais?", "Declara????es que podem explicitar o que o sistema n??o deve fazer.", "Declara????es de servi??os que o sistema deve fornecer.", "Declara????es de restri????es aos servi??os oferecidos pelo sistema.", "Declara????es de como o sistema deve reagir a entradas espec??ficas.", "Declara????es de restri????es aos servi??os oferecidos pelo sistema.", "Categoria", "Tipo"));
-		questions.add(new Question("Os requisitos n??o funcionais podem ser provenientes de: I - Caracter??sticas requeridas para o software (requisitos do produto) II - Caracter??sticas da organiza????o que desenvolve o software (requisitos organizacionais) III - Caracter??sticas de outras fontes (requisitos externos) Qual das op????es abaixo melhor se aplica a esta classifica????o de requisitos n??o funcionais?", "Apenas a op????o I ?? um tipo de requisito n??o funcional.", "Apenas as op????es I e II s??o tipos de requisitos n??o funcionais.", "Todas as op????es s??o tipos de requisitos n??o funcionais.", "Nenhuma das op????es se refere a um tipo de requisito n??o funcional.", "Todas as op????es s??o tipos de requisitos n??o funcionais.", "Categoria", "Tipo"));
-		questions.add(new Question("Sempre que poss??vel, os requisitos n??o funcionais devem descritos quantitativamente para serem objetivamente testados. Qual das seguintes m??tricas ?? indicada no livro texto para medir portabilidade?", "N??mero de sistemas alvo", "Disponibilidade", "Megabytes", "Uso de m??quina virtual", "N??mero de sistemas alvo", "Categoria", "Tipo"));
-		//Essa quest??o cont??m tamb??m a resposta: Valida????o de requisitos
-		questions.add(new Question("Qual das seguintes op??eses n??o ?? uma das fases principais da engenharia de requisitos?", "Elicita????o de requisitos", "Altera????o de requisitos", "Estudo de viabilidade", "Especifica????o de requisitos", "Altera????o de requisitos", "Categoria", "Tipo"));
-		//Essa quest??o cont??m tamb??m a resposta: Casos de Uso
-		questions.add(new Question("Qual das seguintes op????eses n??o ?? uma t??cnica de elicita????o de requisitos?", "Cen??rios", "Entrevistas", "Etnografia", "Tabula????o", "Tabula????o", "Categoria", "Tipo"));
-		//Essa quest??o cont??m tamb??m a resposta: Apenas a op????o I ?? verdadeira.
-		questions.add(new Question("Os objetivos da valida????o de requisitos s??o: I - Encontrar problemas com os requisitos. II - Demonstrar as funcionalidades do sistema. III - Verificar se os requisitos definem o sistema que o cliente realmente quer. Indique a op????o abaixo que melhor se aplica.", "Apenas a op????o II ?? verdadeira.", "Apenas a op????o III ?? verdadeira.", "Apenas duas op????es s??o verdadeiras.", "Todas as op????es s??o verdadeiras.", "Apenas duas op????es s??o verdadeiras.", "Categoria", "Tipo"));
+		questions.add(new Question("Qual das opções abaixo não é uma característica de requisitos de usuário?", "Descreve as funções e restrições do sistema de forma abstrata", "Devem ser padronizados, completos e consistentes", "Escrito em linguagem natural com diagramas simples", "Ponto de vista das necessidades da empresa cliente", "Devem ser padronizados, completos e consistentes", "Categoria", "Tipo"));
+		//Essa questão contém também as respostas: Use linguagem consistente para distinguir entre os requisitos obrigatórios e os desejáveis.
+		//										   Invente um formato padrão e garanta que todas as definições de requisitos aderem a esse formato.
+		questions.add(new Question("Qual das opções abaixo não é uma diretriz recomendada por Sommerville para minimizar os mal entendidos na redação de requisitos em linguagem natural?", "Use uma forma de destacar as partes fundamentais do requisito.", "Não assuma que os leitores compreendem a linguagem técnica de engenharia de software.", "Sempre que possível, tente associar uma lógica a cada um dos requisitos de usuário.", "Todas as opções acima são diretrizes para redação de requisitos em linguagem natural.", "Todas as opções acima são diretrizes para redação de requisitos em linguagem natural.", "Categoria", "Tipo"));
+		questions.add(new Question("Qual das opções abaixo não faz parte da definição de requisitos funcionais?", "Declarações que podem explicitar o que o sistema não deve fazer.", "Declarações de serviços que o sistema deve fornecer.", "Declarações de restrições aos serviços oferecidos pelo sistema.", "Declarações de como o sistema deve reagir a entradas específicas.", "Declarações de restrições aos serviços oferecidos pelo sistema.", "Categoria", "Tipo"));
+		questions.add(new Question("Os requisitos não funcionais podem ser provenientes de: I - Características requeridas para o software (requisitos do produto) II - Características da organização que desenvolve o software (requisitos organizacionais) III - Características de outras fontes (requisitos externos) Qual das opções abaixo melhor se aplica a esta classificação de requisitos não funcionais?", "Apenas a opção I é um tipo de requisito não funcional.", "Apenas as opções I e II são tipos de requisitos não funcionais.", "Todas as opções são tipos de requisitos não funcionais.", "Nenhuma das opções se refere a um tipo de requisito não funcional.", "Todas as opções são tipos de requisitos não funcionais.", "Categoria", "Tipo"));
+		questions.add(new Question("Sempre que possível, os requisitos não funcionais devem descritos quantitativamente para serem objetivamente testados. Qual das seguintes métricas é indicada no livro texto para medir portabilidade?", "Número de sistemas alvo", "Disponibilidade", "Megabytes", "Uso de máquina virtual", "Número de sistemas alvo", "Categoria", "Tipo"));
+		//Essa questão contém também a resposta: Validação de requisitos
+		questions.add(new Question("Qual das seguintes opõeses não é uma das fases principais da engenharia de requisitos?", "Elicitação de requisitos", "Alteração de requisitos", "Estudo de viabilidade", "Especificação de requisitos", "Alteração de requisitos", "Categoria", "Tipo"));
+		//Essa questão contém também a resposta: Casos de Uso
+		questions.add(new Question("Qual das seguintes opçõeses não é uma técnica de elicitação de requisitos?", "Cenários", "Entrevistas", "Etnografia", "Tabulação", "Tabulação", "Categoria", "Tipo"));
+		//Essa questão contém também a resposta: Apenas a opção I é verdadeira.
+		questions.add(new Question("Os objetivos da validação de requisitos são: I - Encontrar problemas com os requisitos. II - Demonstrar as funcionalidades do sistema. III - Verificar se os requisitos definem o sistema que o cliente realmente quer. Indique a opção abaixo que melhor se aplica.", "Apenas a opção II é verdadeira.", "Apenas a opção III é verdadeira.", "Apenas duas opções são verdadeiras.", "Todas as opções são verdadeiras.", "Apenas duas opções são verdadeiras.", "Categoria", "Tipo"));
 		
 		
 		//Quiz 1
 		//true false
-		questions.add(new Question("Software ?????? um programa de computador e a documenta????????????o associada.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Software é um programa de computador e a documentação associada.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Engenharia de Software se preocupa com todos os aspectos do desenvolvimento de sistemas computacionais, incluindo hardware e processo.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Software se preocupa com todos os aspectos do desenvolvimento de sistemas computacionais, incluindo hardware e processo.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Engenharia de Software ?????? uma disciplina de engenharia que se preocupa com todos os aspectos de produ????????????o de software.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Software é uma disciplina de engenharia que se preocupa com todos os aspectos de produção de software.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A diferen??????a entre Ci??????ncia da Computa????????????o e Engenharia de Software ?????? que a primeira foca em teoria e fundamentos enquanto a segunda preocupa-se com o lado pr??????tico do desenvolvimento e entrega de software.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A diferença entre Ciência da Computação e Engenharia de Software é que a primeira foca em teoria e fundamentos enquanto a segunda preocupa-se com o lado prático do desenvolvimento e entrega de software.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A diferen??????a entre Engenharia de Software e Engenharia de Sistemas ?????? que a primeira se preocupa com todos os aspectos de sistemas computacionais. Assim, Engenharia de Sistemas ?????? parte da Engenharia de Software.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("A diferença entre Engenharia de Software e Engenharia de Sistemas é que a primeira se preocupa com todos os aspectos de sistemas computacionais. Assim, Engenharia de Sistemas é parte da Engenharia de Software.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("As principais atividades da Engenharia de Software s??????o especifica????????????o, modelagem, testes e evolu????????????o.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("As principais atividades da Engenharia de Software são especificação, modelagem, testes e evolução.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Pressman apresenta uma vis??????o da Engenharia de Software em cinco camadas sobrepostas: qualidade, processos de software, m??????todos de software, ferramentas e pessoas.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("Pressman apresenta uma visão da Engenharia de Software em cinco camadas sobrepostas: qualidade, processos de software, métodos de software, ferramentas e pessoas.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("As principais fases da Especifica????????????o de Requisitos s??????o estudo de viabilidade, elicita????????????o ou an??????lise de requisitos, especifica????????????o de requisitos e valida????????????o dos requisitos.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("As principais fases da Especificação de Requisitos são estudo de viabilidade, elicitação ou análise de requisitos, especificação de requisitos e validação dos requisitos.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A lei da Complexidade Crescente de Lehman diz que a medida que um sistema evolui, sua complexidade aumenta, a menos que seja realizado esfor??????o para mant??????-la ou diminu??????-la.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A lei da Complexidade Crescente de Lehman diz que a medida que um sistema evolui, sua complexidade aumenta, a menos que seja realizado esforço para mantá-la ou diminuí-la.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Uma das leis de evolu????????????o diz que a qualidade de sistemas parecer?????? estar declinando a menos que eles sejam mantidos e adaptados ??????s modifica????????????es do ambiente.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Uma das leis de evolução diz que a qualidade de sistemas parecerá estar declinando a menos que eles sejam mantidos e adaptados às modificações do ambiente.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		
 		//Quiz 2
 		//true false
-		questions.add(new Question("Na fase de An??????lise de Requisitos s??????o usadas v??????rias t??????cnicas baseadas em observa????????????o e entrevistas.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Na fase de Análise de Requisitos são usadas várias técnicas baseadas em observação e entrevistas.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("O objetivo do Teste de Componentes ?????? garantir que dois ou mais componentes funcionam juntos.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("O objetivo do Teste de Componentes é garantir que dois ou mais componentes funcionam juntos.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("A principal vantagem da Prototipa????????????o ?????? que ela auxilia o engenheiro de software e o cliente a entenderem melhor o que deve ser constru??????do.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("A principal vantagem da Prototipação é que ela auxilia o engenheiro de software e o cliente a entenderem melhor o que deve ser construído.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("No Modelo Espiral o software ?????? desenvolvido em vers??????es.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("No Modelo Espiral o software é desenvolvido em versões.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		
 		//Quiz 3
 		//true false
-		questions.add(new Question("Em m??????todos ??????geis, o cliente geralmente paga pelo tempo necess??????rio para o desenvolvimento do sistema, e n??????o pelo desenvolvimento de um determinado conjunto de requisitos.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Em métodos ágeis, o cliente geralmente paga pelo tempo necessário para o desenvolvimento do sistema, e não pelo desenvolvimento de um determinado conjunto de requisitos.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Em Programa????????????o Extrema (XP), os programadores trabalham em pares e desenvolvem testes antes de escreverem o c??????digo.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Em Programação Extrema (XP), os programadores trabalham em pares e desenvolvem testes antes de escreverem o código.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("O Scrum recomenda o uso de pr??????ticas de programa????????????o ??????gil, como programa????????????o por pares e desenvolvimento dirigido por testes.", "True", "False", "Alternativa", "Alternativa", "False", "Categoria", "Tipo"));
+		questions.add(new Question("O Scrum recomenda o uso de práticas de programação ágil, como programação por pares e desenvolvimento dirigido por testes.", "True", "False", null, null, "False", "Categoria", "Tipo"));
 		
 		
 		//Quiz 4
 		//true false
-		questions.add(new Question("Engenharia de Requisitos ?????? o processo de descobrir, analisar, documentar e verificar os servi??????os que o sistema deve oferecer e as restri????????????es ao seu funcionamento.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Engenharia de Requisitos é o processo de descobrir, analisar, documentar e verificar os serviços que o sistema deve oferecer e as restrições ao seu funcionamento.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 		//true false
-		questions.add(new Question("Stakeholders s??????o pessoas que t??????m qualquer influ??????ncia direta ou indireta sobre os requisitos, como os usu??????rios finais.", "True", "False", "Alternativa", "Alternativa", "True", "Categoria", "Tipo"));
+		questions.add(new Question("Stakeholders são pessoas que têm qualquer influência direta ou indireta sobre os requisitos, como os usuários finais.", "True", "False", null, null, "True", "Categoria", "Tipo"));
 						
 		
 		return questions;

@@ -1,0 +1,21 @@
+/**
+ * TODO description
+ */
+public refines class Profile {
+
+	protected int points;
+	
+	protected void clean() {
+		Super().clean();
+		points = 0;
+	}
+	
+	public int getPoints() {
+		return points;
+	}
+	
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
+}

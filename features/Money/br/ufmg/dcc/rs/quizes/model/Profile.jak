@@ -1,0 +1,21 @@
+/**
+ * TODO description
+ */
+public refines class Profile {
+
+	protected int money;
+	
+	protected void clean() {
+		Super().clean();
+		money = 0;
+	}
+	
+	public int getMoney() {
+		return money;
+	}
+	
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+}

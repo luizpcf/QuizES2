@@ -1,0 +1,28 @@
+/**
+ * TODO description
+ */
+public refines class DbHelper {
+
+	private static final String KEY_MONEY = "money"; // option d
+	
+	protected ContentValues fillProfile(Profile profile) {
+		ContentValues values = Super().fillProfile(profile);
+
+		values.put(KEY_MONEY, profile.getMoney());
+		
+		return values;
+	}
+	
+	protected Profile setProfile(Cursor cursor){
+		Profile profile = Super().setProfile(cursor);
+		profile.setMoney(cursor.getInt(cursor
+				.getColumnIndexOrThrow(KEY_MONEY)));
+		return profile;
+	}
+	
+	protected String otherFields(){
+		String str = Super().otherFields();
+		str.concat(", " + KEY_MONEY + " INTEGER");
+		return str;
+	}
+}

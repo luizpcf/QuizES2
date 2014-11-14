@@ -15,7 +15,7 @@ import br.ufmg.dcc.rs.quizes.model.Question;
 
 
 
-public class DbHelper extends SQLiteOpenHelper {
+abstract class DbHelper$$Base$br$ufmg$dcc$rs$quizes$persistence extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 	// Database Name
 	private static final String DATABASE_NAME = "triviaQuiz";
@@ -35,13 +35,11 @@ public class DbHelper extends SQLiteOpenHelper {
 
 	private static final String TABLE_PROFILE = "profile";
 	private static final String KEY_PROFILE_ID = "id";
-	private static final String KEY_NAME = "name"; // option b
-	private static final String KEY_POINTS = "points"; // option c
-	private static final String KEY_MONEY = "money"; // option d
+	private static final String KEY_NAME = "name";
 	
 	private SQLiteDatabase dbase;
 
-	public DbHelper(Context context) {
+	public DbHelper$$Base$br$ufmg$dcc$rs$quizes$persistence(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
@@ -55,6 +53,9 @@ public class DbHelper extends SQLiteOpenHelper {
 			Question question = (Question)questions.get(i);
 			addQuestion(question);
 		}
+		
+		addProfile(new Profile());
+		
 		// db.close();
 		// System.gc();
 	}
@@ -73,12 +74,15 @@ public class DbHelper extends SQLiteOpenHelper {
 			// Tabela de Profile
 			sql = "CREATE TABLE IF NOT EXISTS " + TABLE_PROFILE + " ( "
 					+ KEY_PROFILE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-					+ KEY_NAME + " TEXT, " + KEY_POINTS + " INTEGER, " + KEY_MONEY
-					+ " INTEGER)";
+					+ KEY_NAME + " TEXT"+ otherFields() + ")";
 			db.execSQL(sql);
 		} catch (Exception e) {
 			Log.d("ERROR", Messages.ERROR_DB_CREATE_TABLES);
 		}
+	}
+	
+	protected String otherFields(){
+		return "";
 	}
 
 	@Override
@@ -109,25 +113,26 @@ public class DbHelper extends SQLiteOpenHelper {
 	// Adding new question
 	private void addProfile(Profile profile) {
 		// SQLiteDatabase db = this.getWritableDatabase();
-		ContentValues values = new ContentValues();
-		values.put(KEY_POINTS, profile.getPoints());
-		values.put(KEY_MONEY, profile.getMoney());
-		values.put(KEY_NAME, profile.getName());
+		ContentValues values = fillProfile(profile);
 		// Inserting Row
 		dbase.insert(TABLE_PROFILE, null, values);
+	}
+	
+	protected ContentValues fillProfile(Profile profile){
+		ContentValues values = new ContentValues();
+		values.put(KEY_NAME, profile.getName());
+		
+		return values;
 	}
 	
 	// Adding new question
 	public void updateProfile(Profile profile) {
 		// SQLiteDatabase db = this.getWritableDatabase();
-		ContentValues values = new ContentValues();
-		values.put(KEY_POINTS, profile.getPoints());
-		values.put(KEY_MONEY, profile.getMoney());
-		values.put(KEY_NAME, profile.getName());
+		ContentValues values = fillProfile(profile);
 		// Inserting Row
 		String args[] = null;
 		args[0] =  profile.getId().toString();
-		dbase.update(TABLE_PROFILE, values, KEY_PROFILE_ID + " = ?", args);
+		dbase.update(TABLE_PROFILE, values, null, args);
 	}
 	
 	public Profile getProfile() {
@@ -238,16 +243,81 @@ public class DbHelper extends SQLiteOpenHelper {
 		return quest;
 	}
 	
-	private Profile setProfile(Cursor cursor){
+	protected Profile setProfile(Cursor cursor){
 		Profile profile = new Profile();
 		profile.setId(cursor.getInt(cursor
 				.getColumnIndexOrThrow(KEY_PROFILE_ID)));
-		profile.setPoints(cursor.getInt(cursor
-				.getColumnIndexOrThrow(KEY_POINTS)));
-		profile.setMoney(cursor.getInt(cursor
-				.getColumnIndexOrThrow(KEY_MONEY)));
 		profile.setName(cursor.getString(cursor
 				.getColumnIndexOrThrow(KEY_NAME)));
 		return profile;
 	}
+}
+
+/**
+ * TODO description
+ */
+abstract class DbHelper$$Money$br$ufmg$dcc$rs$quizes$persistence extends  DbHelper$$Base$br$ufmg$dcc$rs$quizes$persistence  {
+
+	private static final String KEY_MONEY = "money"; // option d
+	
+	protected ContentValues fillProfile(Profile profile) {
+		ContentValues values = super.fillProfile(profile);
+
+		values.put(KEY_MONEY, profile.getMoney());
+		
+		return values;
+	}
+	
+	protected Profile setProfile(Cursor cursor){
+		Profile profile = super.setProfile(cursor);
+		profile.setMoney(cursor.getInt(cursor
+				.getColumnIndexOrThrow(KEY_MONEY)));
+		return profile;
+	}
+	
+	protected String otherFields(){
+		String str = super.otherFields();
+		str.concat(", " + KEY_MONEY + " INTEGER");
+		return str;
+	}
+      // inherited constructors
+
+
+
+	public DbHelper$$Money$br$ufmg$dcc$rs$quizes$persistence ( Context context ) { super(context); }
+}
+
+/**
+ * TODO description
+ */
+public class DbHelper extends  DbHelper$$Money$br$ufmg$dcc$rs$quizes$persistence  {
+
+	private static final String KEY_POINTS = "points"; // option c
+	
+	protected ContentValues fillProfile(Profile profile) {
+		ContentValues values = super.fillProfile(profile);
+
+		values.put(KEY_POINTS, profile.getPoints());
+		
+		return values;
+	}
+	
+	protected Profile setProfile(Cursor cursor){
+		Profile profile = super.setProfile(cursor);
+		profile.setPoints(cursor.getInt(cursor
+				.getColumnIndexOrThrow(KEY_POINTS)));
+		return profile;
+	}
+	
+	protected String otherFields(){
+		String str = super.otherFields();
+		str.concat(", " + KEY_POINTS + " INTEGER");
+		return str;
+	}
+      // inherited constructors
+
+
+
+	public DbHelper ( Context context ) { super(context); }
+
 }

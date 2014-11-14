@@ -1,0 +1,29 @@
+/**
+ * TODO description
+ */
+public refines class DbHelper {
+
+	private static final String KEY_POINTS = "points"; // option c
+	
+	protected ContentValues fillProfile(Profile profile) {
+		ContentValues values = Super().fillProfile(profile);
+
+		values.put(KEY_POINTS, profile.getPoints());
+		
+		return values;
+	}
+	
+	protected Profile setProfile(Cursor cursor){
+		Profile profile = Super().setProfile(cursor);
+		profile.setPoints(cursor.getInt(cursor
+				.getColumnIndexOrThrow(KEY_POINTS)));
+		return profile;
+	}
+	
+	protected String otherFields(){
+		String str = Super().otherFields();
+		str.concat(", " + KEY_POINTS + " INTEGER");
+		return str;
+	}
+
+}
