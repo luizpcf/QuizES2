@@ -58,6 +58,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="70dp"
         android:maxWidth="70dp"
+        android:onClick="lessonTwo"
         android:scaleType="fitCenter"
         android:src="@drawable/book01" />
     
