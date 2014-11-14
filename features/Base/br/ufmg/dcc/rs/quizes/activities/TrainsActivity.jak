@@ -77,19 +77,23 @@ public class TrainsActivity extends Activity {
 		txtQuestion.setText(currentQ.getQUESTION());
 		buttonA.setText(currentQ.getOPTA());
 		buttonB.setText(currentQ.getOPTB());
-		buttonC.setText(currentQ.getOPTC());
-		buttonD.setText(currentQ.getOPTD());
 		
-		if(currentQ.getCATEG() == "X"){
+		if(currentQ.getOPTC() != null){
+			buttonC.setText(currentQ.getOPTC());
 			buttonC.setVisibility(0);
-			buttonD.setVisibility(0);
 			buttonC.setEnabled(true);
-			buttonD.setEnabled(true);
 		}else{
 			buttonC.setVisibility(8);
-			buttonD.setVisibility(8);
 			buttonC.setEnabled(false);
-			buttonD.setEnabled(false);
+		}
+		
+		if(currentQ.getOPTD() != null){
+			buttonC.setText(currentQ.getOPTD());
+			buttonC.setVisibility(0);
+			buttonC.setEnabled(true);
+		}else{
+			buttonC.setVisibility(8);
+			buttonC.setEnabled(false);
 		}
 		qid++;
 	}
