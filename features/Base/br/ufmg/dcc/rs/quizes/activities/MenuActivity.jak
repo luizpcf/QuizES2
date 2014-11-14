@@ -23,11 +23,11 @@ public class MenuActivity extends Activity {
 	}
 	
 	public void acessarTorneios(View view) {
-		//startActivity(new Intent(this, TorneiosActivity.class));
+		startActivity(new Intent(this, TournamentActivity.class));
 	}
 	
 	public void acessarTrofeus(View view) {
-		//startActivity(new Intent(this, TrofeusActivity.class));
+		startActivity(new Intent(this, TrophyActivity.class));
 	}
 
 	
