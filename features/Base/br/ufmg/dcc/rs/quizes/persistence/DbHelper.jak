@@ -51,6 +51,9 @@ public class DbHelper extends SQLiteOpenHelper {
 			Question question = (Question)questions.get(i);
 			addQuestion(question);
 		}
+		
+		addProfile(new Profile());
+		
 		// db.close();
 		// System.gc();
 	}
@@ -76,7 +79,7 @@ public class DbHelper extends SQLiteOpenHelper {
 		}
 	}
 	
-	private String otherFields(){
+	protected String otherFields(){
 		return "";
 	}
 
@@ -113,7 +116,7 @@ public class DbHelper extends SQLiteOpenHelper {
 		dbase.insert(TABLE_PROFILE, null, values);
 	}
 	
-	private ContentValues fillProfile(Profile profile){
+	protected ContentValues fillProfile(Profile profile){
 		ContentValues values = new ContentValues();
 		values.put(KEY_NAME, profile.getName());
 		
@@ -127,7 +130,7 @@ public class DbHelper extends SQLiteOpenHelper {
 		// Inserting Row
 		String args[] = null;
 		args[0] =  profile.getId().toString();
-		dbase.update(TABLE_PROFILE, values, KEY_PROFILE_ID + " = ?", args);
+		dbase.update(TABLE_PROFILE, values, null, args);
 	}
 	
 	public Profile getProfile() {
@@ -238,7 +241,7 @@ public class DbHelper extends SQLiteOpenHelper {
 		return quest;
 	}
 	
-	private Profile setProfile(Cursor cursor){
+	protected Profile setProfile(Cursor cursor){
 		Profile profile = new Profile();
 		profile.setId(cursor.getInt(cursor
 				.getColumnIndexOrThrow(KEY_PROFILE_ID)));

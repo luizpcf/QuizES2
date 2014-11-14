@@ -5,7 +5,7 @@ public refines class DbHelper {
 
 	private static final String KEY_MONEY = "money"; // option d
 	
-	private ContentValues fillProfile(Profile profile) {
+	protected ContentValues fillProfile(Profile profile) {
 		ContentValues values = Super().fillProfile(profile);
 
 		values.put(KEY_MONEY, profile.getMoney());
@@ -13,14 +13,14 @@ public refines class DbHelper {
 		return values;
 	}
 	
-	private Profile setProfile(Cursor cursor){
+	protected Profile setProfile(Cursor cursor){
 		Profile profile = Super().setProfile(cursor);
 		profile.setMoney(cursor.getInt(cursor
 				.getColumnIndexOrThrow(KEY_MONEY)));
 		return profile;
 	}
 	
-	private String otherFields(){
+	protected String otherFields(){
 		String str = Super().otherFields();
 		str.concat(", " + KEY_MONEY + " INTEGER");
 		return str;

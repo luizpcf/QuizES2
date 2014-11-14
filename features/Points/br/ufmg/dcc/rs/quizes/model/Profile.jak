@@ -3,10 +3,10 @@
  */
 public refines class Profile {
 
-	private int points;
+	protected int points;
 	
-	protected void Profile() {
-		Super().Profile();
+	protected void clean() {
+		Super().clean();
 		points = 0;
 	}
 	

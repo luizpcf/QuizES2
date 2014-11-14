@@ -1,12 +1,12 @@
 /**
  * TODO description
  */
-public class Profile {
+public refines class Profile {
 
-	private int money;
+	protected int money;
 	
-	protected void Profile() {
-		Super().Profile();
+	protected void clean() {
+		Super().clean();
 		money = 0;
 	}
 	

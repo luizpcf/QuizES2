@@ -1,11 +1,16 @@
 
 
 public class Profile {
-	private Integer id;
-	private String name;
+	protected Integer id;
+	protected String name;
 	
+	public Profile(){
+		clean();
+	}
 	
-	public Profile() {
+	protected void clean(){
+		id=0;
+		name = "";
 	}
 	
 	public Integer getId() {
