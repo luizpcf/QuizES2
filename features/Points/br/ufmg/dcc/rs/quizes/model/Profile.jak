@@ -1,0 +1,21 @@
+/**
+ * TODO description
+ */
+public refines class Profile {
+
+	private int points;
+	
+	protected void Profile() {
+		Super().Profile();
+		points = 0;
+	}
+	
+	public int getPoints() {
+		return points;
+	}
+	
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
+}

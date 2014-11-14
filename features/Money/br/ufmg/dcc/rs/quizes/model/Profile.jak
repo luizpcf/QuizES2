@@ -1,0 +1,21 @@
+/**
+ * TODO description
+ */
+public class Profile {
+
+	private int money;
+	
+	protected void Profile() {
+		Super().Profile();
+		money = 0;
+	}
+	
+	public int getMoney() {
+		return money;
+	}
+	
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+}
