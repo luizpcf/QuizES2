@@ -6,10 +6,14 @@ import android.widget.Button;
  */
 public refines class MenuActivity {
 
+	public void acessarTrofeus(View view) {
+		startActivity(new Intent(this, TrophyActivity.class));
+	}
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		Super().onCreate(savedInstanceState);
 		Button button = (Button) findViewById(R.id.menu_trofeus);
-		button.setVisibility(8);
+		button.setVisibility(0);
 	}
 	
 }

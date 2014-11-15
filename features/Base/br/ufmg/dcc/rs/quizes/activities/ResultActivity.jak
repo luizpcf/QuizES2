@@ -4,33 +4,15 @@ import android.app.Activity;
 import android.view.Menu;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import br.ufmg.dcc.rs.quizes.model.Profile;
 public class ResultActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Profile profile = Profile.getInstance();
 		setContentView(R.layout.activity_result);
-		//get rating bar object
-		RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1); 
-		bar.setNumStars(5);
-		bar.setStepSize(0.5f);
-		//get text view
 		TextView t=(TextView)findViewById(R.id.textResult);
-		//get score
-		Bundle b = getIntent().getExtras();
-		int score= b.getInt("score");
-		//display score
-		bar.setRating(score);
-		switch (score)
-		{
-		case 1:
-		case 2: t.setText("Tente novamente!");
-		break;
-		case 3:
-		case 4:t.setText("Bom!");
-		break;
-		case 5:t.setText("Parab?ns!");
-		break;
-		}
+		t.setText("Score: "+ profile.getPoints());
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

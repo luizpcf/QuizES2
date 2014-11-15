@@ -57,14 +57,6 @@
             android:text="Button"
             android:textSize="10dp" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="nextQuestion"
-            android:text="@string/str_next"
-            android:textSize="14dp" />
-
     </LinearLayout>
 
 </RelativeLayout>

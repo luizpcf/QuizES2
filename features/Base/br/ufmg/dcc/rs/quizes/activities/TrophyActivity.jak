@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import br.ufmg.dcc.rs.quizes.persistence.DbHelper;
+import br.ufmg.dcc.rs.quizes.model.Profile;
+import android.widget.RelativeLayout;
 
 public class TrophyActivity extends Activity {
 
@@ -11,6 +14,25 @@ public class TrophyActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_trophy);
+		
+		DbHelper db=new DbHelper(this);
+		Profile profile= Profile.getInstance();
+		if(profile.getPoints()>24){
+			RelativeLayout layout =(RelativeLayout)findViewById(R.id.trophyact);
+			layout.setBackgroundResource(R.drawable.estantetrofeu1);
+		}
+		if(profile.getPoints()>49){
+			RelativeLayout layout =(RelativeLayout)findViewById(R.id.trophyact);
+			layout.setBackgroundResource(R.drawable.estantetrofeu2);
+		}
+		if(profile.getPoints()>74){
+			RelativeLayout layout =(RelativeLayout)findViewById(R.id.trophyact);
+			layout.setBackgroundResource(R.drawable.estantetrofeu3);
+		}
+		if(profile.getPoints()>99){
+			RelativeLayout layout =(RelativeLayout)findViewById(R.id.trophyact);
+			layout.setBackgroundResource(R.drawable.estantetrofeu4);
+		}
 	}
 
 	@Override

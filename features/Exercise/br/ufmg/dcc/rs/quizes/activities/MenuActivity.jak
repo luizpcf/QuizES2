@@ -1,0 +1,18 @@
+/**
+ * TODO description
+ */
+
+import android.widget.Button;
+public refines class MenuActivity {
+	
+	public void acessarTreinos(View view) {
+		startActivity(new Intent(this, TrainsActivity.class));
+	}
+
+	protected void onCreate(Bundle savedInstanceState) {
+		Super().onCreate(savedInstanceState);
+		Button button = (Button) findViewById(R.id.menu_treinos);
+		button.setVisibility(0);
+	}
+	
+}

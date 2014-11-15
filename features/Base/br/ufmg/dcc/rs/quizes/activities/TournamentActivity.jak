@@ -34,9 +34,10 @@ public class TournamentActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_trains);
+		setContentView(R.layout.activity_tournament);
 		//inicializar base
 		db=new DbHelper(((TournamentActivity) this));
+		profile = Profile.getInstance();
 		//gerar questoes
 		trainQuesList=db.getQuestionsByType("Tipo");
 		Collections.shuffle(trainQuesList);
@@ -51,8 +52,6 @@ public class TournamentActivity extends Activity {
 		
 		setQuestionView();
 		
-		
-//		profile = db.getProfile();
 	}
 	
 	@Override
@@ -80,7 +79,7 @@ public class TournamentActivity extends Activity {
 		buttonA.setText(currentQ.getOPTA());
 		buttonB.setText(currentQ.getOPTB());
 		
-		if(currentQ.getOPTC() != null){
+		if(!currentQ.getOPTC().equals("Alternativa")){
 			buttonC.setText(currentQ.getOPTC());
 			buttonC.setVisibility(0);
 			buttonC.setEnabled(true);
@@ -89,7 +88,7 @@ public class TournamentActivity extends Activity {
 			buttonC.setEnabled(false);
 		}
 		
-		if(currentQ.getOPTD() != null){
+		if(!currentQ.getOPTD().equals("Alternativa")){
 			buttonD.setText(currentQ.getOPTD());
 			buttonD.setVisibility(0);
 			buttonD.setEnabled(true);
@@ -105,23 +104,19 @@ public class TournamentActivity extends Activity {
 		
 		Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
 		if(currentQ.getANSWER().equals(answer.getText()))
-			answer.setBackgroundColor(Color.GREEN);
+			profile.getInstance().setPoints(profile.getInstance().getPoints()+5);
 		else
-			answer.setBackgroundColor(Color.RED);
+			profile.getInstance().setPoints(profile.getInstance().getPoints()-1);
 		
-	//	db.updateProfile(profile);
+		nextQuestion(view);
 	}
 	
 	public void nextQuestion(View view){
-		buttonA.setBackgroundColor(android.R.drawable.btn_default);
-		buttonB.setBackgroundColor(android.R.drawable.btn_default);
-		buttonC.setBackgroundColor(android.R.style.Holo_Light_ButtonBar);
-		buttonD.setBackgroundColor(android.R.style.Holo_Light_ButtonBar);
 		if(qid<5){					
 			currentQ=(Question)trainQuesList.get(qid);
 			setQuestionView();
 		}else{
-			Intent intent = new Intent(TournamentActivity.this, MenuActivity.class);
+			Intent intent = new Intent(TournamentActivity.this, ResultActivity.class);
 			startActivity(intent);
 		}
 	}

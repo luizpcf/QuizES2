@@ -28,6 +28,11 @@
 					<feature mandatory="true" name="Expert"/>
 				</or>
 				<feature mandatory="true" name="Base"/>
+				<and abstract="true" mandatory="true" name="Type">
+					<feature mandatory="true" name="Course"/>
+					<feature name="Championship"/>
+					<feature name="Exercise"/>
+				</and>
 			</and>
 		</struct>
 		<constraints/>
@@ -51,5 +56,8 @@
 			<feature name="ThrophyRoom"/>
 			<feature name="Intermidiate"/>
 			<feature name="MoneyTeam"/>
+			<feature name="Exercise"/>
+			<feature name="Course"/>
+			<feature name="Championship"/>
 		</featureOrder>
 	</featureModel>

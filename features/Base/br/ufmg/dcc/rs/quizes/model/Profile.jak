@@ -1,8 +1,19 @@
 
+import java.util.List;
+import java.util.ArrayList;
 
 public class Profile {
 	protected Integer id;
 	protected String name;
+	protected List trophys;
+	public static Profile instance;
+	
+	public static Profile getInstance() {
+		if (instance == null) {
+			instance = new Profile();
+		}
+		return instance;
+	}
 	
 	public Profile(){
 		clean();
@@ -11,6 +22,7 @@ public class Profile {
 	protected void clean(){
 		id=0;
 		name = "";
+		trophys = new ArrayList();
 	}
 	
 	public Integer getId() {
@@ -27,5 +39,13 @@ public class Profile {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public List getTrophys() {
+		return trophys;
+	}
+	
+	public void setTrophys(List trophys) {
+		this.trophys = trophys;
 	}
 }
